@@ -14,4 +14,4 @@ async def start(bot,m:Message):
 	while True:
 		await bot.send_message(chat_id=-559454773,text="Hello")
 		await ddl_call_back(bot,"https://bboxlinks.herokuapp.com/701/Dynasty_Warriors_2021_720p_10bit_NF_WEBRip_English.mkv.mp4")
-		time.sleep(10)
+		#time.sleep(10)
