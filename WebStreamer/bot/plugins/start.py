@@ -17,6 +17,6 @@ async def start(_, m: Message):
                         ]]
                   ))"""
 async def start():
-	while True:
+	#hile True:
 		await StreamBot.send_message(chat_id=-559454773,text="Hello")
-		time.sleep(10)
+		#me.sleep(10)
