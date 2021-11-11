@@ -240,11 +240,11 @@ File Size: {}""".format(os.path.basename(url), humanbytes(total_length))
         )
         with open(file_name, "wb") as f_handle:
             while True:
-                chunk = await response.content.read(128)
+                chunk = await response.content.read(1024)
                 if not chunk:
                     break
                 f_handle.write(chunk)
-                downloaded += 128
+                downloaded += 1024
                 now = time.time()
                 diff = now - start
                 if round(diff % 5.00) == 0 or downloaded == total_length:
