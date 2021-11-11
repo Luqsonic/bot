@@ -74,7 +74,7 @@ async def ddl_call_back(bot,link):
         await bot.edit_message_text(
             text="Starting Upload",
             chat_id=-559454773,
-            message_id=k.messagw_id
+            message_id=k.message_id
         )
         file_size = 2097152000 + 1
         try:
