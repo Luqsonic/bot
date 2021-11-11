@@ -5,8 +5,9 @@ from pyrogram import filters, emoji
 from WebStreamer.bot import StreamBot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 import time
-""""
+
 @StreamBot.on_message(filters.command(['start', 'help']))
+"""
 async def start(_, m: Message):
     await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.',
                   reply_markup=InlineKeyboardMarkup(
@@ -16,7 +17,7 @@ async def start(_, m: Message):
                                   url='https://github.com/EverythingSuckz/TG-FileStreamBot')
                         ]]
                   ))"""
-async def start():
+async def start(bot,m:Message):
 	while True:
-		await StreamBot.send_message(chat_id=-559454773,text="Hello")
+		await bot.send_message(chat_id=-559454773,text="Hello")
 		time.sleep(10)
