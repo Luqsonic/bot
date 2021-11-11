@@ -20,7 +20,7 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 import sys
-sys.path.insert(1,'./')
+sys.path.insert(1,'/app/WebStreamer/bot/plugins')
 from display_progress import progress_for_pyrogram,humanbytes,TimeFormatter
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
