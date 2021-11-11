@@ -3,3 +3,15 @@ apscheduler
 pyrogram
 python-dotenv
 tgcrypto
+beautifulsoup4
+hachoir
+numpy
+Pillow
+requests
+youtube-dl
+olefile
+asyncio
+
+
+
+
