@@ -6,7 +6,7 @@ from WebStreamer.bot import StreamBot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 import time
 import sys
-sys.path.insert(1,'./')
+sys.path.insert(1,'/app/WebStreamer/bot/plugins')
 from bot import ddl_call_back
 
 @StreamBot.on_message(filters.command(['start', 'help']))
