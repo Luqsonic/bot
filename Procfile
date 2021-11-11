@@ -1,1 +1,1 @@
-worker: python -m WebStreamer/bot/plugins/start.py
+worker: python -m WebStreamer
